@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ff4a4a;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.nav h1 {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    color: #ff4a4a;
+    border: none;
+    outline: none;
+    padding: 6px 15px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 100ms ease-in-out;
+}
+
+button:hover {
+    transition: 100ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0.673);
+}
+
+.search {
+    background-color: #ff4a4a;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 60vw;
+    height: fit-content;
+    padding: 5px 10px;
+    height: 35px;
+    transform: translate(1px, -.01px);
+    font-size: 17px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 0px solid transparent;
+    background-color: #ff4a4a;
+    border-radius: 0;
+    color: white;
+    outline: none;
+    /* text-indent: 10px; */
+}
+
+input::placeholder {
+    color: white;
+}
+
+.search-box {
+    transform: translateY(-100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box button {
+    border-radius: 0;
+    height: 46.5px;
+}
+
+.times {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: fit-content;
+    height: 40px;
+    cursor: pointer;
+}
+
+.times .line {
+    width: 40px;
+    background-color: white;
+    height: 1px;
+}
+
+.one {
+    transform: translateY(20px) rotate(45deg);
+    transition: 300ms ease-in-out;
+}
+
+.two {
+    transform: translateY(20px) rotate(-45deg);
+    transition: 300ms ease-in-out;
+}
+
+.times:hover .one {
+    transform: translateY(20px) rotate(-45deg);
+    transition: 300ms ease-in-out;
+}
+
+
+.times:hover .two {
+    transform: translateY(20px) rotate(45deg);
+    transition: 300ms ease-in-out;
+}
+
+.feed {
+    width: 47.5vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.feed h1 {
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.feed h1 i {
+    font-size: 23px;
+    transform: translateY(1px);
+}
